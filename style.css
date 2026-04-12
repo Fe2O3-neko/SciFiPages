@@ -1,0 +1,88 @@
+:root {
+  --bg: #111;
+  --fg: #eaeaea;
+  --muted: #a0a0a0;
+  --line: #2a2a2a;
+  --accent: #8ab4f8;
+  --max: 760px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
+  line-height: 1.8;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  padding: 1rem 1.25rem;
+}
+
+.site-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.post-list span {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+article h1 {
+  margin-bottom: 0.25rem;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.tag {
+  display: inline-block;
+  border: 1px solid var(--line);
+  padding: 0.1rem 0.5rem;
+  margin-right: 0.4rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
