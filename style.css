@@ -1,9 +1,9 @@
 :root {
-  --bg: #111;
+  --bg: #1a1a1a;
   --fg: #eaeaea;
   --muted: #a0a0a0;
-  --line: #2a2a2a;
-  --accent: #8ab4f8;
+  --line: #373737;
+  --accent: #90c7eb;
   --max: 760px;
 }
 * { box-sizing: border-box; }
@@ -16,10 +16,14 @@ body {
 }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
+ul li {
+  list-style: none;
+}
 .site-header {
   border-bottom: 1px solid var(--line);
   padding: 1rem 1.25rem;
-}
+  margin: 0 8px;
+  }
 .site-header h1 {
   margin: 0 0 0.5rem;
   font-size: 1.4rem;
@@ -32,10 +36,9 @@ a:hover { text-decoration: underline; }
 .container {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 2rem 1.25rem 4rem;
+  padding: 2rem calc(1.25rem + 8px) 4rem;
 }
 .post-list {
-  list-style: none;
   padding: 0;
 }
 .post-list li {
